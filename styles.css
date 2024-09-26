@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: "Merriweather", serif;
+}
+h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #efefef; /* Change this to match your logo background */
+}
+
+.logo img {
+    height: 200px; /* Adjust logo size */
+}
+
+.menu {
+    background-color:#efefef; /* Same as navbar background color */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes the menu items horizontal */
+    align-items: center; /* Center align items */
+}
+
+.menu li {
+    margin: 0px 15px;   /* Space between menu items */
+}
+
+.menu a {
+    color: #03092a; /* Change text color as needed */
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px; /* Optional: adds padding around links */
+    font-family: "Sacramento", cursive;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+.overview {
+    background-color:#FCDE70;
+    text-align: center;
+    padding: 5px;  /* Top and bottom padding */
+    border-radius: 2px; /* Rounded corners */
+    margin: 0px; /* Space between sections */ 
+    line-height: 1.8;
+    font-size: 17px;
+}
+.hero-image {
+    width: 100%; /* Makes the image cover the full width of the page */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px;
+}
+
+.teacher-intro {
+    background-color: #f4f4f4; /* Light background for the section */
+    padding: 40px 20px; /* Padding around the section */
+}
+
+.container {
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.teacher {
+    margin: 20px 0; /* Margin between teacher sections */
+}
+
+.teacher-background {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-color: mediumaquamarine; /* White background for the teacher profile */
+    padding: 2px; /* Padding inside the background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.teacher-photo {
+    width: 185px; /* Fixed width */
+    height: 210px; /* Fixed height */
+    border-radius: 75px; /* Circular image */
+    margin-right: 20px; /* Space between photo and text */
+}
+
+.teacher-info {
+    flex: 1; /* Allow info section to take remaining space */
+}
+
+.teacher-info h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for teacher name */
+}
+
+.teacher-info p {
+    margin-top: 10px; /* Margin for paragraph */
+    font-size: 16px; /* Font size for bio text */
+    line-height: 1.5; /* Line height for readability */
+}
+.section {
+    padding: 1px; /* Top and bottom padding */
+    margin: 0px; /* Space between sections */
+    background-color: #DDDDDD; /* White background for clarity */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.section h2 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 25px; /* Space below the heading */
+    color: #333; /* Dark text color */
+}
+
+.section-image {
+    width: 100%; /* Full width for responsiveness */
+    height: 40%; /* Maintain aspect ratio */
+    border-radius: 80px; /* Rounded corners for images */
+    margin-bottom: 35px; /* Space below images */
+}
+
+.section ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indentation */
+}
+
+.section ul li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.3em; /* Slightly larger font for list items */
+    color: #555; /* Medium grey text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 0px; /* Adjust padding for smaller screens */
+    }
+    
+    .section h2 {
+        font-size: 1.3em; /* Larger heading on mobile */
+    }
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40%;
+    margin-bottom: 12px;
+    background-color:#222831;
+    padding: 83px;
+    border-radius: 30px;
+}
+
+video {
+    width: 100%;
+    max-width: 560px; /* Adjust as needed */
+    height: 315px; /* Maintain aspect ratio */
+}
+#contactInfo {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#contactInfo input,
+#contactInfo textarea {
+    width: calc(100% - 20px);
+    padding: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#contactInfo input::placeholder,
+#contactInfo textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-size: 1.2em; /* Larger placeholder text */
+}
+
+#queryForm button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#queryForm button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+footer {
+    background-color: #758694;
+    color:#181C14;
+    text-align: center;
+    padding: 15px 0;
+}
