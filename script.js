@@ -5,7 +5,7 @@ function sendMail() {
         name: document.getElementById("name").value,
         phone: document.getElementById("phone").value,
         email: document.getElementById("email").value,
-        query: document.getElementById("query").value,
+        message: document.getElementById("message").value,
     };
     
 
@@ -20,7 +20,7 @@ function sendMail() {
             document.getElementById("name").value = "";
             document.getElementById("phone").value = "";
             document.getElementById("email").value = "";
-            document.getElementById("query").value = "";
+            document.getElementById("message").value = "";
             alert("Your message was sent successfully!");
         })
         .catch(err => {

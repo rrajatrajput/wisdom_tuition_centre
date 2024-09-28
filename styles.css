@@ -163,45 +163,7 @@ video {
     max-width: 560px; /* Adjust as needed */
     height: 315px; /* Maintain aspect ratio */
 }
-#contactInfo {
-    background-color: #f0f8ff; /* Light blue background */
-    padding: 20px;
-    border-radius: 20px; /* Rounded corners */
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
 
-#contactInfo input,
-#contactInfo textarea {
-    width: calc(100% - 20px);
-    padding: 25px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
-
-#contactInfo input::placeholder,
-#contactInfo textarea::placeholder {
-    color: #aaa; /* Placeholder text color */
-    font-size: 1.2em; /* Larger placeholder text */
-}
-
-#queryForm button {
-    padding: 12px;
-    font-size: 16px;
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#queryForm button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
 
 
 footer {

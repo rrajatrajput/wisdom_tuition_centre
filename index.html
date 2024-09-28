@@ -142,30 +142,46 @@
             </div>
         </div>
     </section>
-
-    <section id="contact-form" style="padding: 20px; background-color: #CDC1FF; border-radius: 8px;">
-        <h2>Contact Us💜</h2>
-        <p>If you have any questions, feel free to reach out via WhatsApp or fill out the form below!</p>
-        
-        <a href="https://wa.me/7404274939" style="display: inline-block; margin-bottom: 15px; padding: 10px 20px; background-color: #25D366; color: white; border-radius: 5px; text-decoration: none;">
-            <b>Chat on WhatsApp 💬</b>
-        </a>
-    
-        <div id="contactInfo">
-            <div id="address">
-                <p>Address: <b>Near Kaluwas mod,Village-Nathuwas</b>,Bhiwani</p>
-            </div>
-            <div id="phone">
+        <div class="container border mt-3 bg-light">
+            <div class="row">
+                <div class="col-md-6 p-5 bg-primary text-white">
+                <h2>Contact Us💛</h2>
+                <p>If you have any questions, feel free to reach out via WhatsApp or fill out the form below!</p>
+                <a href="https://wa.me/7404274939" style="display: inline-block; margin-bottom: 15px; padding: 10px 20px; background-color: #25D366; color: white; border-radius: 5px; text-decoration: none;">
+              <b>Chat on WhatsApp 💬</b>
+            </a>
+            <p>Address: <b>Near Kaluwas mod,Village-Nathuwas</b>,Bhiwani</p>  
                 <p>Phone Number: <b> +91  7404274939 , 9812691766</b></p>
-            </div>
-            <form id="queryForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="tel" id="phone" placeholder="Your Phone Number" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="query" placeholder="Your Query" required></textarea>
-                <button type="button" onclick="sendMail()">Submit</button>
-            </form>
-        </div>
+    </div>
+            <div class="col-md-6 py-3">
+            <h3>Contact form</h3>
+            <div class="form-group">
+            <h5 for="name">Name</h5>
+             <input type="text"class="form-control"id class="name"placeholder="Enter your name"/>
+    </div>
+    
+         <div class="form-group">
+         <h5 for="name">Phone number</h5>
+         <input type="phone" id="phone" name="phone" placeholder="123-456-7890" required>
+    </div>
+    <div class="form-group">
+        <h5 for="name">Email</h5>
+         <input type="email"class="form-control"id="email"placeholder="Enter your email"/>
+</div>
+     <div class="form-group">
+        <h5 for="message">Message</h5>
+        <textarea id="message" rows="3" class="form-control"></textarea>
+     </div>
+     <button class="bt btn-primary" onclick="sendMail()">Submit</button>
+    </div>
+    </div>
+</div>
+    
+        
+        
+       
+                
+            
         
         
     </section>
