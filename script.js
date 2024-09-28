@@ -1,6 +1,4 @@
 function sendMail() {
-    console.log("sendMail function called");
-
     var params = {
         name: document.getElementById("name").value,
         phone: document.getElementById("phone").value,
@@ -10,9 +8,7 @@ function sendMail() {
     
 
     const serviceID = "service_mnvao5i";
-    const templateID = "template_gnbprxo";
-
-    console.log("Sending parameters:", params); // Debugging line
+    const templateID = "template_gnbprxo";  
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
@@ -21,10 +17,8 @@ function sendMail() {
             document.getElementById("phone").value = "";
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
+            console.log(res);
             alert("Your message was sent successfully!");
         })
-        .catch(err => {
-            console.error("Failed to send:", err);
-            alert("Failed to send message. Please try again later.");
-        });
-}
+        .catch ((err) => console.log(err));
+        }
