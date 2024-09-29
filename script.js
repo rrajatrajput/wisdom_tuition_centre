@@ -5,10 +5,9 @@ function sendMail() {
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
     };
-    
 
     const serviceID = "service_mnvao5i";
-    const templateID = "template_gnbprxo";  
+    const templateID = "template_gnbprxo";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
@@ -17,8 +16,10 @@ function sendMail() {
             document.getElementById("phone").value = "";
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
-            console.log(res);
             alert("Your message was sent successfully!");
         })
-        .catch ((err) => console.log(err));
-        }
+        .catch(err => {
+            console.error("Failed to send message:", err);
+            alert("Failed to send message. Please try again later.");
+        });
+}
